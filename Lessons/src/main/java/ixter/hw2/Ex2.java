@@ -20,7 +20,9 @@ public class Ex2 {
         int b;
         for (int i = 1; i < n; i++) {
             b = sc.nextInt();
-            if (b <= a) result = false;
+            if (b <= a) {
+                result = false;
+            }
             a = b;
         }
         return result;

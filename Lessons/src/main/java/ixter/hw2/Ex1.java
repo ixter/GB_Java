@@ -18,7 +18,9 @@ public class Ex1 {
         int sum = 0;
         for (int i = 0; i < n; i++) {
             int a = sc.nextInt();
-            if (isSimple(a)) sum += a;
+            if (isSimple(a)) {
+                sum += a;
+            }
         }
         return sum;
     }
@@ -31,7 +33,9 @@ public class Ex1 {
         boolean result = true;
         double sq = Math.sqrt(a);
         for (int i = 2; i <= (int) sq; i++) {
-            if (a % i == 0) result = false;
+            if (a % i == 0) {
+                result = false;
+            }
         }
         return result;
 

@@ -20,7 +20,9 @@ public class Ex3 {
         }
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i] < 0) array[i] = sum;
+            if (array[i] < 0) {
+                array[i] = sum;
+            }
         }
 
     }
