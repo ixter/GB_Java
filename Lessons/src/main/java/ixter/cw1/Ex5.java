@@ -1,18 +1,12 @@
 package ixter.cw1;
 
+import static ixter.helpers.Helper.printArray;
+
 public class Ex5 {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 4};
         int[] newArr = RunningSum(arr);
-        PrintArray(newArr);
-    }
-
-    public static void PrintArray(int[] arr) {
-        String str = "[";
-        for (int i = 0; i < arr.length; i++) {
-            str += arr[i] + (i == arr.length - 1 ? "]" : ", ");
-        }
-        System.out.println(str);
+        printArray(newArr);
     }
 
     public static int[] RunningSum(int[] arr) {

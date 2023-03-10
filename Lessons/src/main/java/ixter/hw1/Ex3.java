@@ -14,7 +14,7 @@ public class Ex3 {
     public static String addBinary(String a, String b) {
         int sizeA = a.length();
         int sizeB = b.length();
-        String res = "";
+        StringBuilder res = new StringBuilder();
         String symA, symB;
         int intA, intB, bonus = 0;
         for (int i = 0; i < Integer.max(sizeA, sizeB); i++) {
@@ -30,20 +30,20 @@ public class Ex3 {
             int sum = intA + intB + bonus;
             bonus = 0;
             switch (sum) {
-                case 0 -> res = "0" + res;
-                case 1 -> res = "1" + res;
+                case 0 -> res.insert(0, "0");
+                case 1 -> res.insert(0, "1");
                 case 2 -> {
-                    res = "0" + res;
+                    res.insert(0, "0");
                     bonus = 1;
                 }
                 case 3 -> {
-                    res = "1" + res;
+                    res.insert(0, "1");
                     bonus = 1;
                 }
             }
 
         }
-        if (bonus > 0) res = "1" + res;
-        return res;
+        if (bonus > 0) res.insert(0, "1");
+        return res.toString();
     }
 }
