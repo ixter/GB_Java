@@ -14,15 +14,16 @@ public class Ex2 {
      * @return является ли последовательность возрастающей
      */
     private static boolean isGrowingSecuence(int n) {
+        boolean result = true;
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b;
         for (int i = 1; i < n; i++) {
             b = sc.nextInt();
-            if (b <= a) return false;
+            if (b <= a) result = false;
             a = b;
         }
-        return true;
+        return result;
 
     }
 }

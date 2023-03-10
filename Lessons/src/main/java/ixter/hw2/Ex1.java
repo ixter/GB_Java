@@ -28,11 +28,12 @@ public class Ex1 {
      * @return является ли число простым
      */
     public static boolean isSimple(int a) {
+        boolean result = true;
         double sq = Math.sqrt(a);
         for (int i = 2; i <= (int) sq; i++) {
-            if (a % i == 0) return false;
+            if (a % i == 0) result = false;
         }
-        return true;
+        return result;
 
     }
 }
