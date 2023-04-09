@@ -28,7 +28,7 @@ public class Task_01 {
         LaptopFilter laptopFilter = new LaptopFilter();
 
         for (int i = 0; i < 100; i++) {
-            laptopSet.add(new Laptop());  // Random laptop generation
+            laptopSet.add(new Laptop());  // Генерация
         }
 
         System.out.println(laptopSet.size());
