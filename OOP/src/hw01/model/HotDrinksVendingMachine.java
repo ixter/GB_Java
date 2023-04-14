@@ -1,6 +1,6 @@
-package model;
+package hw01.model;
 
-import interfacess.VendingMachine;
+import hw01.interfacess.VendingMachine;
 
 import java.util.List;
 

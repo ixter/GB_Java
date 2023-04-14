@@ -1,6 +1,6 @@
-package interfacess;
+package hw01.interfacess;
 
-import model.Product;
+import hw01.model.Product;
 
 public interface VendingMachine {
     Product getProduct(String name) throws IllegalStateException;

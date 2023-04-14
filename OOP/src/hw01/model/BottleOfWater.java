@@ -1,4 +1,4 @@
-package model;
+package hw01.model;
 
 /**
  * Бутылка воды наследуется от продукта

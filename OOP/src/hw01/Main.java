@@ -1,4 +1,6 @@
-import model.*;
+package hw01;
+
+import hw01.model.*;
 
 import java.util.ArrayList;
 import java.util.List;
